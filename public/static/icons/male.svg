@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.639" height="43.137" viewBox="0 0 30.639 43.137">
+<defs><style>.a{fill:#fff;}</style></defs>
+<g transform="translate(4.296 0)">
+    <circle class="a" cx="8.054" cy="8.054" r="8.054" transform="translate(2.969)"/>
+    <circle class="a" cx="4.067" cy="4.067" r="4.067" transform="translate(6.793 35.002)"/>
+    <circle class="a" cx="2.644" cy="2.644" r="2.644" transform="translate(0 17.795)"/>
+    <circle class="a" cx="2.644" cy="2.644" r="2.644" transform="translate(16.758 17.795)"/>
+    <g transform="translate(0.073 17.794)">
+    <path class="a" d="M24.453,42.331l2.573,3.251L19.792,64.828H12.031L5.124,45.582,7.7,42.331Z" transform="translate(-5.124 -42.331)"/>
+    </g>
+</g>
+</svg>
