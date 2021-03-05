@@ -6003,10 +6003,10 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
-  integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
+typescript@^4.3.0-dev.20210304:
+  version "4.3.0-dev.20210304"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-4.3.0-dev.20210304.tgz#8dbe3cdee1f044656232ee164761c44cc2416ff1"
+  integrity sha512-WKBkHocfKiF1PaQRLirbrZYznReRj8JydT5etrhNOSGj0OCEq/3MXzeted9pP8czVfQ+yhzamrDnHlHqYIBTbg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
