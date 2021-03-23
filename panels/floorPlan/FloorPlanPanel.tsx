@@ -25,6 +25,8 @@ import {
   dangerColor,
   unusedColor,
   timeInterval,
+  l_female_01,
+  l_male_02,
 } from "../../constants";
 import { FloorPlan, SensorStatus, FloorData, Status } from "../../types";
 import Select from "react-select";
@@ -620,8 +622,8 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
       x={x - 6.4095}
       y={y - 12.7025}
       xmlns="http://www.w3.org/2000/svg"
-      width="30"
-      height="45.405"
+      width="25"
+      height="40.405"
       viewBox="0 0 12.819 25.405"
     >
       <path
@@ -805,8 +807,8 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
         y={y}
         onClick={handleIAQClick}
         xmlns="http://www.w3.org/2000/svg"
-        width="63"
-        height="63"
+        width="53"
+        height="53"
         viewBox="0 0 63 63"
       >
         <g transform="translate(-0.408 -0.222)">
@@ -1264,8 +1266,8 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
       </svg>
     );
   };
-  // 渲染平面图
-  const renderTailetlist = () => (
+  // 渲染 LG/F 男厕平面图
+  const renderMaleOne = () => (
     <React.Fragment>
       <svg width="1024" height="768" xmlns="http://www.w3.org/2000/svg">
         {/* <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ --> */}
@@ -1290,7 +1292,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
           >
             <rect
               fill="url(#gridpattern)"
-              stroke-width="0"
+              strokeWidth="0"
               y="0"
               x="0"
               height="100%"
@@ -1299,14 +1301,13 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
           </g>
         </g>
         <g>
-          <title>Layer 1</title>
           <line
             id="svg_1"
             y2="20.10938"
             x2="986.5"
             y1="267.10938"
             x1="986.5"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1316,7 +1317,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             x2="989.5"
             y1="22.10938"
             x1="14.5"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1326,27 +1327,18 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             x2="14.5"
             y1="744.10938"
             x1="21.5"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
-          <line
-            id="svg_4"
-            y2="750.10938"
-            x2="50.5"
-            y1="750.10938"
-            x1="49.5"
-            stroke-width="5"
-            stroke="#fff"
-            fill="none"
-          />
+
           <line
             id="svg_7"
             y2="267.10938"
             x2="988.5"
             y1="267.10938"
             x1="899.5"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1356,7 +1348,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             x2="901.5"
             y1="736.10938"
             x1="901.5"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1366,9 +1358,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             x2="19.5"
             y1="742.10938"
             x1="767.5"
-            fill-opacity="null"
-            stroke-opacity="null"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1378,9 +1368,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             x2="764.5"
             y1="598.10938"
             x1="762.5"
-            fill-opacity="null"
-            stroke-opacity="null"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1388,9 +1376,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             id="svg_20"
             d="m260.5,682.10938"
             opacity="0.5"
-            fill-opacity="null"
-            stroke-opacity="null"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1400,9 +1386,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             x2="362.5"
             y1="23.10938"
             x1="362.5"
-            fill-opacity="null"
-            stroke-opacity="null"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1412,7 +1396,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             x2="175.5"
             y1="23.10938"
             x1="174.5"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1422,7 +1406,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             x2="782.5"
             y1="23.10938"
             x1="781.5"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1441,7 +1425,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             x2="562.5"
             y1="22.10938"
             x1="561.5"
-            stroke-width="5"
+            strokeWidth="5"
             stroke="#fff"
             fill="none"
           />
@@ -1449,10 +1433,292 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
       </svg>
     </React.Fragment>
   );
-
+  // 渲染 LG/F 女厕平面图
+  const renderFeMaleOne = () => (
+    <React.Fragment>
+      <svg width="1100" height="768" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <rect
+            fill="transparent"
+            id="canvas_background"
+            height="770"
+            width="1102"
+            y="-1"
+            x="-1"
+          />
+          <g
+            display="none"
+            overflow="visible"
+            y="0"
+            x="0"
+            height="100%"
+            width="100%"
+            id="canvasGrid"
+          >
+            <rect
+              fill="url(#gridpattern)"
+              strokeWidth="0"
+              y="0"
+              x="0"
+              height="100%"
+              width="100%"
+            />
+          </g>
+        </g>
+        <g>
+          <line
+            stroke="#fff"
+            id="svg_1"
+            y2="30.10938"
+            x2="1070.50002"
+            y1="30.10938"
+            x1="25.8"
+            strokeWidth="6"
+          />
+          <line
+            id="svg_2"
+            y2="59.10938"
+            x2="28.5"
+            y1="30.10938"
+            x1="28.5"
+            strokeWidth="6"
+            stroke="#fff"
+          />
+          <line
+            stroke="#fff"
+            id="svg_3"
+            y2="746.10941"
+            x2="31.5"
+            y1="205.10938"
+            x1="31.5"
+            strokeWidth="6"
+          />
+          <line
+            id="svg_5"
+            y2="591.10938"
+            x2="144.5"
+            y1="592.10938"
+            x1="31.5"
+            strokeWidth="6"
+            stroke="#fff"
+          />
+          <line
+            id="svg_9"
+            y2="255.10938"
+            x2="292.5"
+            y1="31.10938"
+            x1="292.5"
+            strokeWidth="6"
+            stroke="#fff"
+          />
+          <line
+            id="svg_10"
+            y2="255.10938"
+            x2="445.5"
+            y1="31.10938"
+            x1="445.5"
+            strokeWidth="6"
+            stroke="#fff"
+          />
+          <line
+            id="svg_11"
+            y2="255.10938"
+            x2="599.5"
+            y1="31.10938"
+            x1="599.5"
+            strokeWidth="6"
+            stroke="#fff"
+          />
+          <line
+            id="svg_12"
+            y2="255.10938"
+            x2="753.5"
+            y1="31.10938"
+            x1="753.5"
+            strokeWidth="6"
+            stroke="#fff"
+          />
+          <line
+            id="svg_14"
+            y2="255.10938"
+            x2="904.5"
+            y1="31.10938"
+            x1="904.5"
+            strokeWidth="6"
+            stroke="#fff"
+          />
+          <line
+            stroke="#fff"
+            id="svg_15"
+            y2="744.10938"
+            x2="1074.50006"
+            y1="747.10938"
+            x1="28.5"
+            strokeWidth="6"
+          />
+          <line
+            stroke="#fff"
+            id="svg_16"
+            y2="743.10938"
+            x2="1071.5"
+            y1="30.10938"
+            x1="1067.5"
+            strokeWidth="6"
+          />
+        </g>
+      </svg>
+    </React.Fragment>
+  );
+  // 渲染 LG/F 男厕 2号平面图
+  const renderMaleTwo = () => (
+    <React.Fragment>
+      <svg width="1024" height="600" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <rect
+            fill="transparent"
+            id="canvas_background"
+            height="602"
+            width="1026"
+            y="-1"
+            x="-1"
+          />
+          <g
+            display="none"
+            overflow="visible"
+            y="0"
+            x="0"
+            height="100%"
+            width="100%"
+            id="canvasGrid"
+          >
+            <rect
+              fill="url(#gridpattern)"
+              stroke-width="0"
+              y="0"
+              x="0"
+              height="100%"
+              width="100%"
+            />
+          </g>
+        </g>
+        <g>
+          <line
+            id="svg_1"
+            y2="21.10938"
+            x2="987.5"
+            y1="21.10938"
+            x1="27.5"
+            stroke-width="6"
+            stroke="#fff"
+          />
+          <line
+            id="svg_2"
+            y2="580.10938"
+            x2="31.5"
+            y1="21.10938"
+            x1="30.5"
+            stroke-width="6"
+            stroke="#fff"
+          />
+          <line
+            stroke="#fff"
+            id="svg_3"
+            y2="260.10938"
+            x2="185.5"
+            y1="22.10938"
+            x1="184.5"
+            stroke-width="6"
+          />
+          <line
+            stroke="#fff"
+            id="svg_6"
+            y2="579.10938"
+            x2="982.5"
+            y1="579.10938"
+            x1="29.5"
+            stroke-width="6"
+          />
+          <line
+            stroke="#fff"
+            id="svg_7"
+            y2="260.10938"
+            x2="349.5"
+            y1="22.10938"
+            x1="348.5"
+            stroke-width="6"
+          />
+          <line
+            id="svg_8"
+            y2="579.10938"
+            x2="656.5"
+            y1="231.10938"
+            x1="655.5"
+            stroke-width="6"
+            stroke="#fff"
+          />
+          <line
+            transform="rotate(0.69 818) "
+            stroke="#fff"
+            id="svg_9"
+            y2="230.10938"
+            x2="981.49998"
+            y1="233.10938"
+            x1="654.50001"
+            stroke-width="6"
+          />
+          <line
+            id="svg_10"
+            y2="254.10938"
+            x2="981.5"
+            y1="207.10938"
+            x1="981.5"
+            stroke-width="6"
+            stroke="#fff"
+          />
+          <line
+            stroke="#fff"
+            id="svg_11"
+            y2="578.10938"
+            x2="979.5"
+            y1="423.10938"
+            x1="979.5"
+            stroke-width="6"
+          />
+          <line
+            id="svg_12"
+            y2="48.10938"
+            x2="984.5"
+            y1="22.10938"
+            x1="984.5"
+            stroke-width="6"
+            stroke="#fff"
+          />
+          <line
+            id="svg_14"
+            y2="423.10938"
+            x2="982.4"
+            y1="423.10938"
+            x1="840.5"
+            stroke-width="6"
+            stroke="#fff"
+          />
+        </g>
+      </svg>
+    </React.Fragment>
+  );
   const renderFloorPlan = (floor: string) => {
     let floorPlan: FloorPlan;
-    floorPlan = l_male_01;
+    switch (floor) {
+      case "l_male_01":
+        floorPlan = l_male_01;
+        break;
+      case "l_female_01":
+        floorPlan = l_female_01;
+        break;
+      case "l_male_02":
+        floorPlan = l_male_02;
+        break;
+    }
     return (
       <React.Fragment>
         <div className={classes.floorContainer2}>
@@ -1460,7 +1726,9 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
             <CircularProgress className={classes.loading} />
           )}
           <svg viewBox={`0 0 ${floorPlan.width} ${floorPlan.height}`}>
-            {floor === "l_male_01" && renderTailetlist()}
+            {floor === "l_male_01" && renderMaleOne()}
+            {floor === "l_female_01" && renderFeMaleOne()}
+            {floor === "l_male_02" && renderMaleTwo()}
             {initialLoadStatus === Status.success &&
               Object.keys(floorPlan).map((key) => {
                 switch (key) {
@@ -1480,38 +1748,39 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
                     });
                   case "sanitizers":
                     return floorPlan[key].map((coordinate, index) => {
-                      let sensor_id = index + 1;
-                      if (floor === "g_female_01" && index === 1) sensor_id = 9;
-                      const extractedData = data.sensor_sanitizer.find(
-                        (item) => item.sensor_id === sensor_id.toString()
-                      );
-                      if (extractedData !== undefined) {
-                        return renderSanitizer(coordinate.x, coordinate.y);
-                      }
+                      // let sensor_id = index + 1;
+                      // if (floor === "g_female_01" && index === 1) sensor_id = 9;
+                      // const extractedData = data.sensor_sanitizer.find(
+                      //   (item) => item.sensor_id === sensor_id.toString()
+                      // );
+                      // if (extractedData !== undefined) {
+                      return renderSanitizer(coordinate.x, coordinate.y);
+                      // }
                     });
                   case "sanitizerProgressBars":
                     return floorPlan[key].map((coordinate, index) => {
-                      let sensor_id = index + 1;
-                      if (floor === "g_female_01" && index === 1) sensor_id = 9;
-                      if (floor === "g_male_01") sensor_id = 17 - index;
-                      const extractedData = data.sensor_sanitizer.find(
-                        (item) => item.sensor_id === sensor_id.toString()
+                      // let sensor_id = index + 1;
+                      // if (floor === "g_female_01" && index === 1) sensor_id = 9;
+                      // if (floor === "g_male_01") sensor_id = 17 - index;
+                      // const extractedData = data.sensor_sanitizer.find(
+                      //   (item) => item.sensor_id === sensor_id.toString()
+                      // );
+                      // if (extractedData !== undefined) {
+                      //   let value = 1,
+                      //     status = SensorStatus.normal;
+                      //   if (extractedData.value === 0) {
+                      //     value = 0.1;
+                      //     status = SensorStatus.danger;
+                      //   }
+                      return renderProgressBar(
+                        coordinate.x + 30.9195,
+                        coordinate.y + 8.7955,
+                        // value,
+                        0.1,
+                        status,
+                        false
                       );
-                      if (extractedData !== undefined) {
-                        let value = 1,
-                          status = SensorStatus.normal;
-                        if (extractedData.value === 0) {
-                          value = 0.1;
-                          status = SensorStatus.danger;
-                        }
-                        return renderProgressBar(
-                          coordinate.x + 30.9195,
-                          coordinate.y + 8.7955,
-                          value,
-                          status,
-                          false
-                        );
-                      }
+                      // }
                     });
                   case "light":
                     return renderLightOn(floorPlan[key].x, floorPlan[key].y);
@@ -1536,6 +1805,27 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
                         1,
                         false
                       );
+                    });
+                  case "toilets":
+                    return floorPlan[key].map((coordinate, index) => {
+                      // if (floor === "b1_accessible_02")
+                      //   return renderToilet(
+                      //     coordinate.x,
+                      //     coordinate.y,
+                      //     SensorStatus.unused
+                      //   );
+                      // let sensor_id = index + 17;
+                      // if (floor === "g_male_01") sensor_id = 5 - index;
+                      // const extractedData = data.sensor_door.find(
+                      //   (item) => item.sensor_id === sensor_id.toString()
+                      // );
+                      // if (extractedData !== undefined) {
+                      //   let status = SensorStatus.normal;
+                      //   if (extractedData.value === 1) {
+                      //     status = SensorStatus.danger;
+                      //   }
+                      return renderToilet(coordinate.x, coordinate.y, status);
+                      // }
                     });
                   case "tissues":
                     return floorPlan[key].map((coordinate, index) => {
@@ -1569,7 +1859,7 @@ const FloorPlanPanel = ({ floor }: FloorPlanPanelProps) => {
                       return renderProgressBar(
                         coordinate.x + 30.9195,
                         coordinate.y + 8.7955,
-                        0.8,
+                        0.1,
                         status,
                         false
                       ); // value

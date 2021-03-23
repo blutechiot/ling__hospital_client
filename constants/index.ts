@@ -49,21 +49,50 @@ export const l_male_01 = {
   iaq: {x: 852, y: 85},
   queue: {x: 150, y: 200},
   toiletPapers: [ {x: 415, y: 65}, {x: 630, y: 65}],
-  toiletPaperProgressBars: [ { x: 445, y: 70 }, { x: 660, y: 70 }],
+  toiletPaperProgressBars: [{ x: 445, y: 70 }, { x: 660, y: 70 }],
+ 
   tissues: [{x: 620, y: 630.4}], //  抽纸
   tissueProgressBars: [{ x: 602.53, y: 680.41 }], // 抽纸进度条
-  // light: { x: 840.394, y: 500.934 },
-  // ashcan: { x: 450, y: 565 },
-  // ashcanProgressBars: [{x: 467, y: 620}],
   sanitizers: [{x: 418, y: 140}, {x: 631.85, y: 140}], // 消毒液
   sanitizerProgressBars: [{ x: 445.15, y: 148.79 }, { x: 660, y: 148.79 }],
   soaps: [{ x: 275, y: 620 }, { x: 390, y: 620 }, { x: 510, y: 620 }], // 洗手液
   soapProgressBars: [{x: 260, y: 680}, {x: 375, y: 680.97}, {x: 498.33, y: 680.97}],
 };
 
+export const l_female_01 = {
+  width: 1100,
+  height: 770,
+  iaq: {x: 705, y: 575},
+  toiletPapers: [ {x: 315, y: 145}, {x: 470, y: 145}, {x: 625, y: 145}],
+  toiletPaperProgressBars: [{ x: 355, y: 150 }, { x: 510, y: 150 }, {x: 665, y: 150}],
+  toilets: [{ x: 340, y: 50 }, { x: 495, y: 50 }, { x: 645, y: 50 }],
+  tissues: [{ x: 410, y: 674 }], //  抽纸
+  tissueProgressBars: [{ x: 393, y: 710 }], // 抽纸进度条
+  
+  // sanitizers: [{ x: 318, y: 210 }, { x: 470.85, y: 210 }, { x: 631.85, y: 210 }], // 消毒液
+  // sanitizerProgressBars: [{ x: 355.15, y: 218.79 }, { x: 510, y: 218.79 },{ x: 665, y: 218.79 }],
+  soaps: [ { x: 560, y: 655 }, { x: 720, y: 655 }, { x: 880, y: 655 }],
+  soapProgressBars: [ { x: 545, y: 710 }, { x: 705.33, y: 710 }, {x:865, y: 710}], // 洗手液
+}
+
+export const l_male_02 = {
+  width: 1024,
+  height: 600,
+  iaq: { x: 452, y: 305 },
+  toilets: [{ x: 235, y: 50 }],
+  toiletPapers: [ {x: 220, y: 165}],
+  toiletPaperProgressBars: [{ x: 250, y: 170 }],
+  soaps: [ { x: 500, y: 35 }],
+  soapProgressBars: [{ x: 485, y: 90 }], // 洗手液
+  tissues: [{ x: 650, y: 40 }], //  抽纸
+  tissueProgressBars: [{ x: 633, y: 75 }], // 抽纸进度条
+};
+
 
 export const floorOptions = [
-  { value: 'l_male_01', label: 'LG/F 男廁'}
+  { value: 'l_male_01', label: 'LG/F 男廁' },
+  { value: 'l_female_01', label: 'LG/F 女廁' },
+  { value: 'l_male_02', label: 'LG/F 男廁' },
 ];
 
 export const categoryOptions = [
